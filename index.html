@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="menu-icon">&#9776;</div>
+        <button class="new-chat-btn">+ New chat</button>
+        <div class="sidebar-links">
+            <a href="#" class="sidebar-link">Help</a>
+            <a href="#" class="sidebar-link">Activity</a>
+            <a href="#" class="sidebar-link">Settings</a>
+        </div>
+        <div class="location">
+            <p>Jamshedpur, Jharkhand, India</p>
+            <a href="#">From your IP address &bull; Update location</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <h1>Hello, Divyank</h1>
+            <h2>How can I help you today?</h2>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <p>Help explain a concept in a kid-friendly way</p>
+            </div>
+            <div class="card">
+                <p>Find hotels in Phuket for a week, and suggest a packing list</p>
+            </div>
+            <div class="card">
+                <p>Give me ideas for what to do with what's in this image?</p>
+            </div>
+            <div class="card">
+                <p>Help me craft an OOO message based on a few details</p>
+            </div>
+        </div>
+        <div id="msg-container">
+            <div class="user-msg">User:- Hello</div>
+            <div class="bot-msg">Bot:- Hello, How can I help you</div>
+        </div>
+        <div class="user-input-div">
+            <input type="text" class="user-input" placeholder="Ask something, anything">
+            <button class="btn">Search with Gemini</button>
+        </div>
+        <div class="footer">
+            <p>Humans review some saved chats to improve Google AI. To stop this for future chats, turn off Gemini Apps Activity. If this setting is on, don’t enter info you wouldn’t want reviewed or used. <a href="#">How it works</a></p>
+        </div>
+    </div>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "@google/generative-ai": "https://esm.run/@google/generative-ai"
+        }
+      }
+    </script>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
